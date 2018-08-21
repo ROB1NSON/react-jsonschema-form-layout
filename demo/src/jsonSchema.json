@@ -1,0 +1,50 @@
+{
+  "title": "Select Products and Modifiers in the following text.",
+  "description": "A simple form example.",
+  //"targets": [
+  //  {
+  //    "textAnnotation": {
+  //      "body": "Coconut milk latte with a burrito",
+  //      "labels": ["description", "modifiers"]
+  //    }
+  //  }
+  //],
+  "questions": {
+    "type": "object",
+    "properties": {
+
+      "baz": {
+        "type": "array",
+        "title": "Products",
+        "items": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "instance": {
+                  "type": "integer"
+                }
+              }
+            },
+            "modifiers": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "instance": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}
